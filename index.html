@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="meta.title">Ahmed Atwan | Portfolio</title>
+  <meta name="description" content="Ahmed Atwan — AI Specialist, Arabic Language Reviewer, Creative Technologist, and Multimedia Creator." data-i18n-attr="content" data-i18n="meta.description" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-theme="dark" data-lang="en">
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-grid"></div>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home">Ahmed Atwan</a>
+      <nav class="nav" id="navMenu">
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#experience" data-i18n="nav.experience">Experience</a>
+        <a href="#projects" data-i18n="nav.projects">Projects</a>
+        <a href="#skills" data-i18n="nav.skills">Skills</a>
+        <a href="#certifications" data-i18n="nav.certifications">Certifications</a>
+        <a href="#licenses" data-i18n="nav.licenses">Licenses</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <div class="controls">
+        <div class="lang-switch" id="langSwitch">
+          <button class="lang-btn" data-lang-btn="en" aria-label="English">EN</button>
+          <button class="lang-btn" data-lang-btn="ar" aria-label="العربية الفصحى">فصحى</button>
+          <button class="lang-btn" data-lang-btn="ar-eg" aria-label="العربية المصرية">مصري</button>
+        </div>
+        <button class="theme-btn" id="themeBtn" aria-label="Toggle light/dark mode">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="1.8"/><path d="M12 2.5v2.4M12 19.1v2.4M4.2 4.2l1.7 1.7M18.1 18.1l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.2 19.8l1.7-1.7M18.1 5.9l1.7-1.7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container" id="home">
+      <div class="hero-copy reveal">
+        <span class="eyebrow" data-i18n="hero.eyebrow">Personal Website • Portfolio • Contact</span>
+        <h1>
+          <span data-i18n="hero.title.before">Building</span>
+          <span class="accent" data-i18n="hero.title.highlight">AI-powered</span>
+          <span data-i18n="hero.title.after">work with a creative edge.</span>
+        </h1>
+        <p class="lead" data-i18n="hero.lead">
+          I’m Ahmed Atwan, an AI specialist, Arabic language reviewer, and multimedia creator based in Cairo.
+          I combine evaluation quality, language sense, and creative production to build useful digital work.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contact" data-i18n="hero.ctaPrimary">Let’s Work Together</a>
+          <a class="btn btn-secondary" href="assets/Ahmed_Atwan_CV.pdf" download data-i18n="hero.ctaSecondary">Download CV</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-card">
+            <strong data-i18n="hero.stat1.title">AI & Arabic</strong>
+            <span data-i18n="hero.stat1.desc">Training, reviewing, evaluation</span>
+          </div>
+          <div class="stat-card">
+            <strong data-i18n="hero.stat2.title">Creative Media</strong>
+            <span data-i18n="hero.stat2.desc">Audio, video, content creation</span>
+          </div>
+          <div class="stat-card">
+            <strong data-i18n="hero.stat3.title">Custom Systems</strong>
+            <span data-i18n="hero.stat3.desc">Smart software for real work</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal delay-1">
+        <div class="portrait-frame">
+          <img src="assets/profile.png" alt="Ahmed Atwan portrait" />
+        </div>
+        <div class="floating-card card-1">
+          <span data-i18n="hero.floating1">Arabic Language Specialist</span>
+        </div>
+        <div class="floating-card card-2">
+          <span data-i18n="hero.floating2">AI Reviewer • Creative Technologist</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="about">
+      <div class="section-heading reveal">
+        <span class="section-tag" data-i18n="about.tag">About</span>
+        <h2 data-i18n="about.heading">Professional profile</h2>
+      </div>
+      <div class="about-grid">
+        <article class="panel reveal">
+          <p data-i18n="about.p1">
+            I work across AI quality, Arabic language evaluation, audio production, and digital media. My background in
+            Drama & Theatre Criticism gives me a creative perspective that helps me write, review, and build with more
+            attention to tone, clarity, and audience impact.
+          </p>
+          <p data-i18n="about.p2">
+            I’m especially interested in projects where technology meets language, content, and user experience.
+          </p>
+        </article>
+        <article class="panel reveal delay-1">
+          <ul class="info-list">
+            <li><span data-i18n="about.location.label">Location</span><strong data-i18n="about.location.value">Cairo, Egypt</strong></li>
+            <li><span data-i18n="about.focus.label">Focus</span><strong data-i18n="about.focus.value">AI training, Arabic review, multimedia</strong></li>
+            <li><span data-i18n="about.education.label">Education</span><strong data-i18n="about.education.value">Ain Shams University — Drama & Theatre Criticism</strong></li>
+            <li><span data-i18n="about.languages.label">Languages</span><strong data-i18n="about.languages.value">Arabic, English</strong></li>
+            <li><span data-i18n="about.military.label">Military Status</span><strong data-i18n="about.military.value">Exempted (certificate available)</strong></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container" id="experience">
+      <div class="section-heading reveal">
+        <span class="section-tag" data-i18n="experience.tag">Experience</span>
+        <h2 data-i18n="experience.heading">Selected roles</h2>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-item panel reveal">
+          <div class="timeline-top">
+            <h3>Outlier by Scale AI</h3>
+            <span data-i18n="experience.outlier.date">April 2025 – Present</span>
+          </div>
+          <p data-i18n="experience.outlier.desc">Worked as Contributor, then Reviewer, evaluating AI responses and reviewing training data for accuracy, consistency, and Arabic language quality.</p>
+          <ul class="timeline-list">
+            <li data-i18n="experience.outlier.li1">AI training &amp; data annotation</li>
+            <li data-i18n="experience.outlier.li2">AI response evaluation</li>
+            <li data-i18n="experience.outlier.li3">Multi-level quality assurance &amp; review</li>
+            <li data-i18n="experience.outlier.li4">Speech &amp; voice data annotation</li>
+            <li data-i18n="experience.outlier.li5">Computer vision &amp; spatial annotation</li>
+          </ul>
+          <p class="timeline-progression" data-i18n="experience.outlier.progression">Career path: AI Data Contributor → Reviewer → Advanced Reviewer → Senior/Full-Task Reviewer → AI Evaluation &amp; Multimodal Data Specialist</p>
+        </article>
+
+        <article class="timeline-item panel reveal delay-1">
+          <div class="timeline-top">
+            <h3 data-i18n="experience.babel.title">Babel Audio — Arabic Voice Data Specialist</h3>
+            <span data-i18n="experience.babel.date">2025 – Present</span>
+          </div>
+          <p data-i18n="experience.babel.desc">Alongside my AI data work, I've contributed to multiple voice-focused projects at Babel Audio, specializing in Egyptian Arabic (Masri) voice data and audio annotation. I've worked across four different voice-related assignments, each focused on a different type of conversational or audio data — recording and contributing to Egyptian Arabic speech for advice-oriented scenarios, emotional expression, general conversational speech, and background-noise annotation. My current work focuses on identifying and tagging background noises within audio recordings, helping create structured audio data that improves AI systems' understanding of real-world acoustic environments.</p>
+          <ul class="timeline-list">
+            <li data-i18n="experience.babel.li1">Egyptian Arabic (Masri) voice data</li>
+            <li data-i18n="experience.babel.li2">Voice acting &amp; speech recording</li>
+            <li data-i18n="experience.babel.li3">Conversational &amp; emotional speech data</li>
+            <li data-i18n="experience.babel.li4">Advice-oriented &amp; general conversational speech</li>
+            <li data-i18n="experience.babel.li5">Background noise identification &amp; tagging</li>
+            <li data-i18n="experience.babel.li6">Audio annotation &amp; quality control</li>
+          </ul>
+        </article>
+
+        <article class="timeline-item panel reveal delay-2">
+          <div class="timeline-top">
+            <h3>Vodafone Egypt</h3>
+            <span data-i18n="experience.vodafone.date">2024</span>
+          </div>
+          <p data-i18n="experience.vodafone.desc">Started in customer service and advanced to technical support through strong problem-solving and communication skills, later reaching Task Manager level — reviewing agents' work in technical support for home internet and home wireless services.</p>
+        </article>
+
+        <article class="timeline-item panel reveal delay-2">
+          <div class="timeline-top">
+            <h3 data-i18n="experience.hadath.title">Al-Hadath Al-Youm — Video Editor</h3>
+            <span data-i18n="experience.hadath.date">Project-based</span>
+          </div>
+          <p data-i18n="experience.hadath.desc">Worked as a video editor with Al-Hadath Al-Youm channel at the Egyptian Media Production City, editing video content and supporting production teams to improve storytelling and overall quality.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container" id="projects">
+      <div class="section-heading reveal">
+        <span class="section-tag" data-i18n="projects.tag">Projects</span>
+        <h2 data-i18n="projects.heading">Featured work</h2>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card panel reveal">
+          <div class="project-badge" data-i18n="projects.p1.badge">Featured</div>
+          <h3 data-i18n="projects.p1.title">Silver Shop Management System</h3>
+          <p data-i18n="projects.p1.desc">
+            A custom business system for organizing and managing a silver shop, including inventory flow, sales,
+            purchases, pricing, and operational structure. Built as a real-world software project with AI-assisted development.
+          </p>
+          <ul>
+            <li data-i18n="projects.p1.li1">Inventory organization</li>
+            <li data-i18n="projects.p1.li2">Sales and purchase workflow</li>
+            <li data-i18n="projects.p1.li3">Financial tracking structure</li>
+            <li data-i18n="projects.p1.li4">Practical retail-focused design</li>
+          </ul>
+        </article>
+
+        <article class="project-card panel reveal delay-1">
+          <div class="project-badge soft" data-i18n="projects.p2.badge">AI</div>
+          <h3 data-i18n="projects.p2.title">Arabic AI Training & Evaluation</h3>
+          <p data-i18n="projects.p2.desc">
+            Evaluated model responses, reviewed task quality, and improved Arabic-language outputs for tone, relevance,
+            correctness, and cultural fit.
+          </p>
+          <ul>
+            <li data-i18n="projects.p2.li1">Response comparison</li>
+            <li data-i18n="projects.p2.li2">Prompt quality review</li>
+            <li data-i18n="projects.p2.li3">Arabic localization quality</li>
+            <li data-i18n="projects.p2.li4">Reviewer-level feedback</li>
+          </ul>
+        </article>
+
+        <article class="project-card panel reveal delay-2">
+          <div class="project-badge soft" data-i18n="projects.p3.badge">Media</div>
+          <h3 data-i18n="projects.p3.title">Audio & Video Production</h3>
+          <p data-i18n="projects.p3.desc">
+            Long-term hands-on work in sound editing, audio enhancement, video editing, and YouTube content creation.
+          </p>
+          <ul>
+            <li>FL Studio & Audacity</li>
+            <li data-i18n="projects.p3.li3">Content workflow and editing</li>
+            <li data-i18n="projects.p3.li4">Creative storytelling support</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container" id="skills">
+      <div class="section-heading reveal">
+        <span class="section-tag" data-i18n="skills.tag">Skills</span>
+        <h2 data-i18n="skills.heading">What I work with</h2>
+      </div>
+      <div class="skills-grid reveal">
+        <div class="skill-chip" data-i18n="skills.chip1">AI Response Evaluation</div>
+        <div class="skill-chip" data-i18n="skills.chip2">Arabic Language Review</div>
+        <div class="skill-chip" data-i18n="skills.chip3">Prompt Quality Analysis</div>
+        <div class="skill-chip" data-i18n="skills.chip4">Audio Editing</div>
+        <div class="skill-chip" data-i18n="skills.chip5">Sound Enhancement</div>
+        <div class="skill-chip">FL Studio</div>
+        <div class="skill-chip">Audacity</div>
+        <div class="skill-chip" data-i18n="skills.chip6">Content Production</div>
+        <div class="skill-chip" data-i18n="skills.chip7">Technical Support</div>
+      </div>
+    </section>
+
+    <section class="section container" id="certifications">
+      <div class="section-heading reveal">
+        <span class="section-tag" data-i18n="certs.tag">Certifications</span>
+        <h2 data-i18n="certs.heading">Certificates & credentials</h2>
+      </div>
+      <div class="certs-grid">
+        <article class="cert-card panel reveal">
+          <div class="cert-thumb">
+            <img src="assets/certificates/cert-generative-ai-transformers.jpg" alt="Certificate: Generative AI Language Modeling with Transformers, IBM via Coursera" loading="lazy" />
+          </div>
+          <div class="cert-body">
+            <h3>Generative AI Language Modeling with Transformers</h3>
+            <span class="cert-meta"><span data-i18n="certs.issuer">IBM</span> · <span data-i18n="certs.via">via Coursera</span> · Aug 26, 2026</span>
+            <a class="cert-link" href="https://coursera.org/verify/CC7WBQIXHOAO" target="_blank" rel="noreferrer"><span data-i18n="certs.verify">Verify certificate</span> ↗</a>
+          </div>
+        </article>
+
+        <article class="cert-card panel reveal delay-1">
+          <div class="cert-thumb">
+            <img src="assets/certificates/cert-genai-llms-architecture.jpg" alt="Certificate: Generative AI and LLMs: Architecture and Data Preparation, IBM via Coursera" loading="lazy" />
+          </div>
+          <div class="cert-body">
+            <h3>Generative AI and LLMs: Architecture and Data Preparation</h3>
+            <span class="cert-meta"><span data-i18n="certs.issuer">IBM</span> · <span data-i18n="certs.via">via Coursera</span> · Jul 25, 2026</span>
+            <a class="cert-link" href="https://coursera.org/verify/JL539JDCVGBP" target="_blank" rel="noreferrer"><span data-i18n="certs.verify">Verify certificate</span> ↗</a>
+          </div>
+        </article>
+
+        <article class="cert-card panel reveal delay-2">
+          <div class="cert-thumb">
+            <img src="assets/certificates/cert-quality-work-agility.jpg" alt="Certificate: Delivering Quality Work with Agility, IBM via Coursera" loading="lazy" />
+          </div>
+          <div class="cert-body">
+            <h3>Delivering Quality Work with Agility</h3>
+            <span class="cert-meta"><span data-i18n="certs.issuer">IBM</span> · <span data-i18n="certs.via">via Coursera</span> · Jul 22, 2026</span>
+            <a class="cert-link" href="https://coursera.org/verify/SW1MC0E65861" target="_blank" rel="noreferrer"><span data-i18n="certs.verify">Verify certificate</span> ↗</a>
+          </div>
+        </article>
+
+        <article class="cert-card panel reveal">
+          <div class="cert-thumb">
+            <img src="assets/certificates/cert-genai-nlp-foundational.jpg" alt="Certificate: Gen AI Foundational Models for NLP & Language Understanding, IBM via Coursera" loading="lazy" />
+          </div>
+          <div class="cert-body">
+            <h3>Gen AI Foundational Models for NLP & Language Understanding</h3>
+            <span class="cert-meta"><span data-i18n="certs.issuer">IBM</span> · <span data-i18n="certs.via">via Coursera</span> · Jul 31, 2026</span>
+            <a class="cert-link" href="https://coursera.org/verify/8DHFFUWIS8AP" target="_blank" rel="noreferrer"><span data-i18n="certs.verify">Verify certificate</span> ↗</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container" id="licenses">
+      <div class="section-heading reveal">
+        <span class="section-tag" data-i18n="licenses.tag">Credentials</span>
+        <h2 data-i18n="licenses.heading">Professional Licensing</h2>
+      </div>
+      <div class="certs-grid">
+        <article class="cert-card panel reveal">
+          <div class="cert-body">
+            <h3 data-i18n="licenses.card1.title">Professional Practice License</h3>
+            <span class="cert-meta" data-i18n="licenses.card1.issuer">Ministry of Manpower — Egypt</span>
+            <ul class="info-list">
+              <li><span data-i18n="licenses.jobtitle.label">Job Title</span><strong data-i18n="licenses.jobtitle.value">IT E-Services Business Observer</strong></li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="cert-card panel reveal delay-1">
+          <div class="cert-body">
+            <h3 data-i18n="licenses.card2.title">Skill Level Assessment Certificate</h3>
+            <span class="cert-meta" data-i18n="licenses.card2.issuer">Ministry of Manpower — Egypt</span>
+            <ul class="info-list">
+              <li><span data-i18n="licenses.jobtitle.label">Job Title</span><strong data-i18n="licenses.jobtitle.value">IT E-Services Business Observer</strong></li>
+              <li><span data-i18n="licenses.classification.label">Classification</span><strong data-i18n="licenses.classification.value">Skilled Worker</strong></li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container" id="contact">
+      <div class="contact-wrap panel reveal">
+        <div>
+          <span class="section-tag" data-i18n="contact.tag">Contact</span>
+          <h2 data-i18n="contact.heading">Let’s build something useful.</h2>
+          <p data-i18n="contact.desc">
+            Open to freelance work, AI-related roles, review tasks, media production, and custom software projects.
+          </p>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:ahmedatwan024@gmail.com">ahmedatwan024@gmail.com</a>
+          <a href="tel:+201026344162">+20 102 634 4162</a>
+          <a href="https://www.linkedin.com/in/ahmed-atwan-15a9b02a6/" target="_blank" rel="noreferrer" data-i18n="contact.linkedin">LinkedIn Profile</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div>
+        <p data-i18n="footer.rights">© 2026 Ahmed Atwan. All rights reserved.</p>
+        <p class="footer-credit" data-i18n="footer.builtWith">Designed and built end-to-end by Ahmed Atwan using AI.</p>
+      </div>
+      <a href="#home" data-i18n="footer.backToTop">Back to top</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
