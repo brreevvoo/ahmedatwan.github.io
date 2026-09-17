@@ -584,10 +584,20 @@ initLanguage();
     const theme = getTheme();
     ctx.clearRect(0, 0, W, H);
 
+    /* Background fill */
+    const isLight = document.body.getAttribute('data-theme') === 'light';
+    ctx.fillStyle = isLight ? '#f4f2fb' : '#09090f';
+    ctx.fillRect(0, 0, W, H);
+
+    /* Radial glow at top */
+    const grad = ctx.createRadialGradient(W / 2, 0, 0, W / 2, 0, W * 0.5);
+    grad.addColorStop(0, isLight ? 'rgba(124,58,237,0.10)' : 'rgba(139,92,246,0.16)');
+    grad.addColorStop(1, 'rgba(0,0,0,0)');
+    ctx.fillStyle = grad;
+    ctx.fillRect(0, 0, W, H);
+
     /* Static dot texture */
-    ctx.fillStyle = document.body.getAttribute('data-theme') === 'light'
-      ? 'rgba(20,10,50,0.04)'
-      : 'rgba(255,255,255,0.04)';
+    ctx.fillStyle = isLight ? 'rgba(20,10,50,0.04)' : 'rgba(255,255,255,0.04)';
     for (let x = DOT_SPACING / 2; x < W; x += DOT_SPACING) {
       for (let y = DOT_SPACING / 2; y < H; y += DOT_SPACING) {
         ctx.beginPath();
