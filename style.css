@@ -60,7 +60,7 @@ html { scroll-behavior: smooth; }
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  background: radial-gradient(circle at top, rgba(139,92,246,0.16), transparent 25%), var(--bg);
+  background: var(--bg);
   color: var(--text);
   overflow-x: hidden;
   transition: background .35s ease, color .35s ease;
@@ -118,15 +118,8 @@ img { max-width: 100%; display: block; }
 .container { width: min(1180px, calc(100% - 40px)); margin: 0 auto; }
 
 .bg-grid {
-  position: fixed;
-  inset: 0;
-  background-image:
-    linear-gradient(var(--grid-line) 1px, transparent 1px),
-    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
-  background-size: 38px 38px;
-  mask-image: radial-gradient(circle at center, black 30%, transparent 85%);
-  pointer-events: none;
-  z-index: -3;
+  /* Plain background — no grid pattern */
+  display: none;
 }
 
 .bg-orb {
@@ -134,9 +127,10 @@ img { max-width: 100%; display: block; }
   width: 380px;
   height: 380px;
   border-radius: 50%;
-  filter: blur(70px);
-  opacity: 0.28;
-  z-index: -2;
+  filter: blur(90px);
+  opacity: 0.18;
+  z-index: 0;
+  pointer-events: none;
 }
 .orb-1 { background: #8b5cf6; top: -120px; right: -120px; }
 .orb-2 { background: #4f2dc8; bottom: -160px; left: -120px; }
